@@ -17987,14 +17987,24 @@ memory usage: 54.9 KB
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Copies of the original pieces of data are made prior to cleaning.</p>
+<p><a href="https://stackoverflow.com/questions/43423347/why-is-blindly-using-df-copy-a-bad-idea-to-fix-the-settingwithcopywarning/43559496">https://stackoverflow.com/questions/43423347/why-is-blindly-using-df-copy-a-bad-idea-to-fix-the-settingwithcopywarning/43559496</a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[352]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tweets_clean</span> <span class="o">=</span> <span class="n">df_tweets</span>
-<span class="n">df_images_clean</span> <span class="o">=</span> <span class="n">df_images</span>
-<span class="n">df_twitter_clean</span> <span class="o">=</span> <span class="n">df_twitter</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tweets_clean</span> <span class="o">=</span> <span class="n">df_tweets</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_images_clean</span> <span class="o">=</span> <span class="n">df_images</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_twitter_clean</span> <span class="o">=</span> <span class="n">df_twitter</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -23334,6 +23344,7 @@ VsoBwszMSjlAmJlZKQcIMzMr9f9i5EZ218XHsQAAAABJRU5ErkJggg==
 <p><a href="https://stackoverflow.com/questions/37598665/how-to-plot-a-value-counts-in-pandas-that-has-a-huge-number-of-different-countsprob">https://stackoverflow.com/questions/37598665/how-to-plot-a-value-counts-in-pandas-that-has-a-huge-number-of-different-countsprob</a></p>
 <p><a href="https://github.com/Raey2014/WeRateDogs-Udacity-Nanodegree-Project/blob/master/act_report.ipynb">https://github.com/Raey2014/WeRateDogs-Udacity-Nanodegree-Project/blob/master/act_report.ipynb</a></p>
 <p><a href="https://github.com/anoru/Wrangling-Data-WeRateDogs/blob/master/act_report.ipynb">https://github.com/anoru/Wrangling-Data-WeRateDogs/blob/master/act_report.ipynb</a></p>
+<p><a href="https://review.udacity.com/#!/reviews/1437572">https://review.udacity.com/#!/reviews/1437572</a></p>
 
 </div>
 </div>
